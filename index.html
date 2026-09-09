@@ -3,306 +3,486 @@
 
 <head>
 
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-  <meta name="description"
-        content="Official website of AstroAskAQuestion, an Android application for Vedic astrology questions, private birth profiles, voice assistance and multiple Indian languages.">
+<meta name="description"
+content="Official website of AstroAskAQuestion - Android application for Vedic Astrology Questions & Answers.">
 
-  <meta name="robots"
-        content="index, follow">
+<meta name="keywords"
+content="Astrology, Vedic Astrology, Horoscope, Kundli, AstroAskAQuestion, Astrology App">
 
-  <link rel="canonical"
-        href="https://astroaskaquestion.com/">
+<meta name="theme-color"
+content="#351c75">
 
-  <title>AstroAskAQuestion | Vedic Astrology Android App</title>
+<meta name="robots"
+content="index,follow">
 
-  <style>
+<link rel="canonical"
+href="https://astroaskaquestion.com">
 
-    * {
-      box-sizing: border-box;
-    }
+<link rel="icon"
+href="logo.png"
+type="image/png">
 
-    html {
-      scroll-behavior: smooth;
-    }
+<meta property="og:title"
+content="AstroAskAQuestion">
 
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #202124;
-      background: #ffffff;
-      line-height: 1.6;
-    }
+<meta property="og:description"
+content="Official website of AstroAskAQuestion">
 
-    header {
-      background: #351c75;
-      color: white;
-      text-align: center;
-      padding: 55px 20px 50px;
-    }
+<meta property="og:image"
+content="logo.png">
 
-    .logo {
-      width: 90px;
-      height: 90px;
-      border-radius: 18px;
-      object-fit: contain;
-      margin-bottom: 14px;
-      background: white;
-    }
+<meta property="og:type"
+content="website">
 
-    header h1 {
-      margin: 0 0 8px;
-      font-size: 40px;
-    }
+<title>
 
-    .tagline {
-      margin: 0;
-      font-size: 20px;
-      font-weight: bold;
-    }
+AstroAskAQuestion | Official Website
 
-    .subtagline {
-      margin: 8px 0 0;
-      font-size: 16px;
-    }
+</title>
 
-    .play-button {
-      display: inline-block;
-      margin-top: 20px;
-      background: #ffffff;
-      color: #351c75;
-      padding: 13px 24px;
-      border-radius: 8px;
-      font-weight: bold;
-      text-decoration: none;
-    }
+<style>
 
-    .play-button:hover {
-      background: #f5f1ff;
-    }
+*{
 
-    nav {
-      background: #24124f;
-      text-align: center;
-      padding: 14px 10px;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
+box-sizing:border-box;
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
-      display: inline-block;
-      padding: 4px 0;
-    }
+}
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+html{
 
-    main {
-      max-width: 1050px;
-      margin: auto;
-      padding: 40px 22px;
-    }
+scroll-behavior:smooth;
 
-    section {
-      margin-bottom: 55px;
-    }
+}
 
-    h2 {
-      color: #351c75;
-      margin-top: 0;
-      font-size: 30px;
-    }
+body{
 
-    h3 {
-      color: #351c75;
-    }
+margin:0;
 
-    a {
-      color: #351c75;
-    }
+font-family:Arial,Helvetica,sans-serif;
 
-    .intro {
-      font-size: 18px;
-    }
+background:#ffffff;
 
-    .features {
-      display: grid;
-      grid-template-columns:
-        repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
-    }
+color:#202124;
 
-    .feature {
-      border: 1px solid #dddddd;
-      border-radius: 10px;
-      padding: 20px;
-      background: #ffffff;
-    }
+line-height:1.65;
 
-    .feature strong {
-      color: #351c75;
-      font-size: 18px;
-    }
+}
 
-    .card {
-      background: #f7f5fb;
-      border-radius: 10px;
-      padding: 25px;
-      margin-top: 18px;
-    }
+header{
 
-    .steps {
-      display: grid;
-      grid-template-columns:
-        repeat(auto-fit, minmax(190px, 1fr));
-      gap: 16px;
-    }
+background:#351c75;
 
-    .step {
-      background: #f7f5fb;
-      border-radius: 10px;
-      padding: 20px;
-      text-align: center;
-    }
+color:white;
 
-        .download-section {
-      background: #351c75;
-      color: white;
-      border-radius: 14px;
-      padding: 35px 25px;
-      text-align: center;
-    }
+padding:28px 22px;
 
-    .download-section h2 {
-      color: white;
-    }
+}
 
-    .download-section p {
-      font-size: 18px;
-    }
+.header-container{
 
-    .download-button {
-      display: inline-block;
-      background: white;
-      color: #351c75;
-      padding: 14px 26px;
-      border-radius: 8px;
-      font-weight: bold;
-      text-decoration: none;
-      margin-top: 10px;
-    }
+max-width:1200px;
 
-    .download-button:hover {
-      background: #f5f1ff;
-    }
+margin:auto;
 
-    .qr-placeholder {
-      width: 150px;
-      height: 150px;
-      margin: 24px auto 0;
-      border: 2px dashed #ffffff;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
-      padding: 10px;
-    }
+display:flex;
 
-    .business-grid {
-      display: grid;
-      grid-template-columns:
-        repeat(auto-fit, minmax(240px, 1fr));
-      gap: 18px;
-    }
+justify-content:space-between;
 
-    .business-item {
-      background: #f7f5fb;
-      padding: 20px;
-      border-radius: 10px;
-    }
+align-items:center;
 
-    .contact-box {
-      background: #f7f5fb;
-      border-radius: 10px;
-      padding: 25px;
-    }
+gap:30px;
 
-    .important-links {
-      display: grid;
-      grid-template-columns:
-        repeat(auto-fit, minmax(210px, 1fr));
-      gap: 15px;
-    }
+flex-wrap:wrap;
 
-    .important-link {
-      border: 1px solid #dddddd;
-      border-radius: 10px;
-      padding: 18px;
-      text-align: center;
-      background: white;
-    }
+}
 
-    .important-link a {
-      font-weight: bold;
-      text-decoration: none;
-    }
+.header-left{
 
-    footer {
-      background: #24124f;
-      color: white;
-      text-align: center;
-      padding: 28px 16px;
-    }
+flex:1;
 
-    footer a {
-      color: white;
-      text-decoration: none;
-      margin: 0 6px;
-    }
+min-width:300px;
 
-    footer a:hover {
-      text-decoration: underline;
-    }
+}
 
-    @media (max-width: 700px) {
+.logo{
 
-      header h1 {
-        font-size: 32px;
-      }
+width:82px;
 
-      .tagline {
-        font-size: 18px;
-      }
+height:82px;
 
-      nav {
-        position: static;
-      }
+background:white;
 
-      nav a {
-        display: block;
-        margin: 6px 0;
-      }
+padding:6px;
 
-      main {
-        padding: 30px 18px;
-      }
+border-radius:16px;
 
-      h2 {
-        font-size: 26px;
-      }
-    }
+object-fit:contain;
 
-  </style>
+}
+
+header h1{
+
+margin:14px 0 8px;
+
+font-size:34px;
+
+font-weight:bold;
+
+word-break:break-word;
+
+}
+
+.tagline{
+
+font-size:19px;
+
+font-weight:bold;
+
+margin:0;
+
+}
+
+.subtagline{
+
+font-size:15px;
+
+margin-top:10px;
+
+opacity:.95;
+
+}
+
+.play-button{
+
+display:inline-block;
+
+margin-top:22px;
+
+background:white;
+
+color:#351c75;
+
+padding:13px 24px;
+
+border-radius:8px;
+
+font-weight:bold;
+
+text-decoration:none;
+
+transition:.25s;
+
+}
+
+.play-button:hover{
+
+background:#efe8ff;
+
+}
+
+.header-right{
+
+text-align:center;
+
+min-width:180px;
+
+}
+
+.header-right img{
+
+width:155px;
+
+height:155px;
+
+background:white;
+
+padding:6px;
+
+border-radius:12px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.18);
+
+}
+
+.header-right p{
+
+font-size:14px;
+
+margin-top:8px;
+
+}
+
+nav{
+
+background:#24124f;
+
+text-align:center;
+
+padding:14px;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+margin:0 14px;
+
+}
+
+nav a:hover{
+
+text-decoration:underline;
+
+}
+
+main{
+
+max-width:980px;
+
+margin:auto;
+
+padding:45px 22px;
+
+}
+
+section{
+
+margin-bottom:55px;
+
+}
+
+h2{
+
+color:#351c75;
+
+font-size:30px;
+
+margin-bottom:18px;
+
+}
+
+.card{
+
+background:#f8f6fc;
+
+padding:24px;
+
+border-radius:12px;
+
+margin-top:18px;
+
+}
+
+.features{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+
+gap:18px;
+
+}
+
+.feature{
+
+border:1px solid #dddddd;
+
+padding:20px;
+
+border-radius:10px;
+
+background:white;
+
+transition:.25s;
+
+}
+
+.feature:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+}
+
+.steps{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+
+gap:18px;
+
+}
+
+.step{
+
+background:#f8f6fc;
+
+padding:20px;
+
+border-radius:10px;
+
+}
+
+.business-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(230px,1fr));
+
+gap:18px;
+
+}
+
+.business-item{
+
+background:#f8f6fc;
+
+padding:20px;
+
+border-radius:10px;
+
+}
+
+.contact-box{
+
+background:#f8f6fc;
+
+padding:24px;
+
+border-radius:10px;
+
+}
+
+footer{
+
+background:#24124f;
+
+color:white;
+
+text-align:center;
+
+padding:30px 18px;
+
+}
+
+footer a{
+
+color:white;
+
+text-decoration:none;
+
+margin:0 6px;
+
+}
+
+footer a:hover{
+
+text-decoration:underline;
+
+}
+
+a{
+
+color:#351c75;
+
+}
+
+@media(max-width:700px){
+
+header{
+
+padding:25px 16px;
+
+}
+
+.header-container{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.logo{
+
+width:68px;
+
+height:68px;
+
+}
+
+header h1{
+
+font-size:28px;
+
+}
+
+.tagline{
+
+font-size:16px;
+
+}
+
+.subtagline{
+
+font-size:14px;
+
+}
+
+.header-right img{
+
+width:135px;
+
+height:135px;
+
+}
+
+.play-button{
+
+padding:11px 18px;
+
+font-size:15px;
+
+}
+
+nav a{
+
+display:block;
+
+margin:8px 0;
+
+}
+
+main{
+
+padding:30px 18px;
+
+}
+
+h2{
+
+font-size:24px;
+
+}
+
+}
+
+</style>
 
 </head>
 
@@ -310,397 +490,727 @@
 
 <header>
 
-  <img
-    src="logo.png"
-    alt="AstroAskAQuestion Logo"
-    class="logo">
+<div class="header-container">
 
-  <h1>AstroAskAQuestion</h1>
+<div class="header-left">
 
-  <p class="tagline">
-    Your Personal Vedic Astrology Assistant
-  </p>
+<img
+src="logo.png"
+class="logo"
+alt="AstroAskAQuestion Logo">
 
-  <p class="subtagline">
-    Private • Secure • Multiple Profiles • Voice Assistance • Indian Languages
-  </p>
+<h1>
 
-  <a
-    class="play-button"
-    href="https://play.google.com/store/apps/details?id=com.astrosaathi.app"
-    target="_blank"
-    rel="noopener noreferrer">
-    Download on Google Play
-  </a>
+AstroAskAQuestion
+
+</h1>
+
+<p class="tagline">
+
+Your Personal Vedic Astrology Assistant
+
+</p>
+
+<p class="subtagline">
+
+Private • Secure • Multiple Profiles • Voice Assistance • Indian Languages
+
+</p>
+
+<a
+class="play-button"
+href="https://play.google.com/store/apps/details?id=com.astrosaathi.app"
+target="_blank"
+rel="noopener noreferrer">
+
+Download on Google Play
+
+</a>
+
+</div>
+
+<div class="header-right">
+
+<a href="https://astroaskaquestion.com">
+
+<img
+src="website-qr.png"
+alt="AstroAskAQuestion QR Code">
+
+</a>
+
+<p>
+
+Scan to learn more
+
+</p>
+
+</div>
+
+</div>
 
 </header>
 
-<nav>
+  <nav>
 
-  <a href="#about">About</a>
+<a href="#about">
 
-  <a href="#features">Features</a>
+About
 
-  <a href="#how-it-works">How It Works</a>
+</a>
 
-  <a href="#download">Download</a>
+<a href="#features">
 
-  <a href="#business">Business</a>
+Features
 
-  <a href="#contact">Contact</a>
+</a>
 
-  <a href="privacy-policy.html">Privacy Policy</a>
+<a href="#how-it-works">
 
-  <a href="account-deletion.html">Account Deletion</a>
+How It Works
+
+</a>
+
+<a href="#business">
+
+Business
+
+</a>
+
+<a href="#contact">
+
+Contact
+
+</a>
+
+<a href="privacy-policy.html">
+
+Privacy Policy
+
+</a>
+
+<a href="account-deletion.html">
+
+Account Deletion
+
+</a>
 
 </nav>
 
 <main>
 
-  <section id="about">
+<section id="about">
 
-    <h2>About AstroAskAQuestion</h2>
+<h2>
 
-    <p class="intro">
-      AstroAskAQuestion is an Android application designed to make
-      Vedic astrology guidance simple, accessible and easy to use.
-    </p>
+About AstroAskAQuestion
 
-    <p>
-      Users can create private birth profiles, enter their birth details,
-      ask astrology questions and maintain separate answer histories
-      for different profiles.
-    </p>
+</h2>
 
-    <p>
-      The App includes Google Sign-In, cloud synchronization,
-      voice assistance and support for multiple Indian languages.
-    </p>
+<p>
 
-  </section>
+AstroAskAQuestion is an Android application designed
+to make Vedic astrology guidance simple, accessible,
+private and easy to use.
 
-  <section id="features">
+</p>
 
-    <h2>App Features</h2>
+<p>
 
-    <div class="features">
+Create one or more birth profiles, ask astrology
+questions using your saved birth details and receive
+personalized astrology guidance directly within the
+application.
 
-      <div class="feature">
-        <strong>Vedic Astrology Questions</strong>
-        <p>
-          Ask astrology questions using your saved birth details.
-        </p>
-      </div>
+</p>
 
-      <div class="feature">
-        <strong>Multiple Profiles</strong>
-        <p>
-          Create and maintain separate private birth profiles.
-        </p>
-      </div>
+<p>
 
-      <div class="feature">
-        <strong>Google Sign-In</strong>
-        <p>
-          Secure authentication and account synchronization.
-        </p>
-      </div>
+The application has been designed with privacy,
+simplicity and ease of use in mind while supporting
+multiple Indian languages and voice assistance.
 
-      <div class="feature">
-        <strong>Google Play Billing</strong>
-        <p>
-          Purchase wallet points securely through Google Play.
-        </p>
-      </div>
+</p>
 
-            <div class="feature">
-        <strong>Voice Assistance</strong>
-        <p>
-          Use voice input to make data entry and question submission easier.
-        </p>
-      </div>
+</section>
 
-      <div class="feature">
-        <strong>Indian Languages</strong>
-        <p>
-          Designed to support users in multiple Indian languages.
-        </p>
-      </div>
+<section id="features">
 
-      <div class="feature">
-        <strong>Private Answer History</strong>
-        <p>
-          Keep astrology questions and answers associated with the correct profile.
-        </p>
-      </div>
+<h2>
 
-      <div class="feature">
-        <strong>Cloud Restore</strong>
-        <p>
-          Restore eligible profiles and answer history after signing in.
-        </p>
-      </div>
+App Features
 
-    </div>
+</h2>
 
-  </section>
+<div class="features">
 
-  <section id="how-it-works">
+<div class="feature">
 
-    <h2>How It Works</h2>
+<h3>
 
-    <div class="steps">
+🔮
+<br><br>
 
-      <div class="step">
-        <h3>1. Create a Profile</h3>
-        <p>
-          Enter the birth details required for the astrology profile.
-        </p>
-      </div>
+Vedic Astrology
 
-      <div class="step">
-        <h3>2. Ask a Question</h3>
-        <p>
-          Type or speak your astrology question.
-        </p>
-      </div>
+</h3>
 
-      <div class="step">
-        <h3>3. Receive Your Answer</h3>
-        <p>
-          Your astrology answer is displayed in the App.
-        </p>
-      </div>
+<p>
 
-      <div class="step">
-        <h3>4. Save Your History</h3>
-        <p>
-          Review previous questions and answers from your saved history.
-        </p>
-      </div>
+Ask questions based on your birth details and receive
+personalized astrology guidance.
 
-    </div>
-
-  </section>
-
-  <section id="download" class="download-section">
-
-    <h2>Download AstroAskAQuestion</h2>
-
-    <p>
-      AstroAskAQuestion is available for Android through Google Play.
-    </p>
-
-    <a
-      class="download-button"
-      href="https://play.google.com/store/apps/details?id=com.astrosaathi.app"
-      target="_blank"
-      rel="noopener noreferrer">
-      Download on Google Play
-    </a>
-
-<div style="margin-top:24px; text-align:center;">
-
-  <a href="https://astroaskaquestion.com"
-     target="_blank"
-     rel="noopener noreferrer">
-
-    <img
-      src="website-qr.png"
-      alt="Scan to open the AstroAskAQuestion official website"
-      style="width:160px;
-             height:160px;
-             border-radius:10px;
-             background:white;
-             padding:6px;">
-  </a>
-
-  <p style="margin-top:10px;">
-    Scan to learn more about AstroAskAQuestion
-  </p>
+</p>
 
 </div>
 
-  </section>
+<div class="feature">
 
-  <section id="business">
+<h3>
 
-    <h2>Business</h2>
+👤
+<br><br>
 
-    <div class="business-grid">
+Multiple Profiles
 
-      <div class="business-item">
-        <strong>Developer</strong>
-        <p>Pranjal Misra</p>
-      </div>
+</h3>
 
-      <div class="business-item">
-        <strong>Product</strong>
-        <p>AstroAskAQuestion</p>
-      </div>
+<p>
 
-      <div class="business-item">
-        <strong>Business Activity</strong>
-        <p>
-          Software and mobile application development
-        </p>
-      </div>
+Maintain separate birth profiles for yourself,
+family members and friends.
 
-      <div class="business-item">
-        <strong>Location</strong>
-        <p>
-          Bengaluru, Karnataka, India
-        </p>
-      </div>
+</p>
 
-      <div class="business-item">
-        <strong>Platform</strong>
-        <p>
-          Android
-        </p>
-      </div>
+</div>
 
-      <div class="business-item">
-        <strong>Official Website</strong>
-        <p>
-          <a href="https://astroaskaquestion.com">
-            astroaskaquestion.com
-          </a>
-        </p>
-      </div>
+<div class="feature">
 
-    </div>
+<h3>
 
-  </section>
+🎤
+<br><br>
 
-  <section id="contact">
+Voice Assistance
 
-    <h2>Contact</h2>
+</h3>
 
-    <div class="contact-box">
+<p>
 
-      <p>
-        For technical support, privacy questions,
-        account-related assistance or business enquiries,
-        contact:
-      </p>
+Use voice input to enter birth details and ask
+questions more easily.
 
-      <p>
-        <strong>Email:</strong>
-        <a href="mailto:astroaskaquestion.support@gmail.com">
-          astroaskaquestion.support@gmail.com
-        </a>
-      </p>
+</p>
 
-      <p>
-        <strong>Website:</strong>
-        <a href="https://astroaskaquestion.com">
-          https://astroaskaquestion.com
-        </a>
-      </p>
+</div>
 
-      <p>
-        <strong>Google Play:</strong>
-        <a
-          href="https://play.google.com/store/apps/details?id=com.astrosaathi.app"
-          target="_blank"
-          rel="noopener noreferrer">
-          AstroAskAQuestion on Google Play
-        </a>
-      </p>
+<div class="feature">
 
-    </div>
+<h3>
 
-  </section>
+🌐
+<br><br>
 
-    <section id="important-links">
+Indian Languages
 
-    <h2>Important Links</h2>
+</h3>
 
-    <div class="important-links">
+<p>
 
-      <div class="important-link">
-        <a href="privacy-policy.html">
-          Privacy Policy
-        </a>
-      </div>
+Designed to support multiple Indian languages for
+a better user experience.
 
-      <div class="important-link">
-        <a href="account-deletion.html">
-          Account Deletion
-        </a>
-      </div>
+</p>
 
-      <div class="important-link">
-        <a href="#contact">
-          Contact & Support
-        </a>
-      </div>
+</div>
 
-      <div class="important-link">
-        <a
-          href="https://play.google.com/store/apps/details?id=com.astrosaathi.app"
-          target="_blank"
-          rel="noopener noreferrer">
-          Google Play
-        </a>
-      </div>
+<div class="feature">
 
-    </div>
+<h3>
 
-  </section>
+☁️
+<br><br>
 
-  <section id="important-information">
+Cloud Synchronization
 
-    <h2>Important Information</h2>
+</h3>
 
-    <div class="card">
+<p>
 
-      <p>
-        Astrology guidance provided through AstroAskAQuestion is intended
-        for informational and personal guidance purposes.
-      </p>
+Securely synchronize supported data across devices
+after signing in.
 
-      <p>
-        Astrology is interpretive and should not be treated as certainty.
-        Information provided through the App should not replace professional
-        medical, legal, financial, mental-health, safety or emergency advice.
-      </p>
+</p>
 
-    </div>
+</div>
 
-  </section>
+<div class="feature">
 
-</main>
+<h3>
 
-<footer>
+🔒
+<br><br>
 
-  <p>
-    <a href="index.html">Home</a> |
-    <a href="#about">About</a> |
-    <a href="#features">Features</a> |
-    <a href="#download">Download</a> |
-    <a href="#contact">Contact</a> |
-    <a href="privacy-policy.html">Privacy Policy</a> |
-    <a href="account-deletion.html">Account Deletion</a> |
-    <a
-      href="https://play.google.com/store/apps/details?id=com.astrosaathi.app"
-      target="_blank"
-      rel="noopener noreferrer">
-      Google Play
-    </a>
-  </p>
+Private & Secure
 
-  <p>
-    © 2026 AstroAskAQuestion. All rights reserved.
-  </p>
+</h3>
 
-  <p>
-    Developed by Pranjal Misra · Bengaluru, Karnataka, India
-  </p>
+<p>
+
+Your profiles, wallet information and question
+history remain associated with your account.
+
+</p>
+
+</div>
+
+<div class="feature">
+
+<h3>
+
+💳
+<br><br>
+
+Google Play Billing
+
+</h3>
+
+<p>
+
+Purchase wallet points securely through
+Google Play.
+
+</p>
+
+</div>
+
+<div class="feature">
+
+<h3>
+
+📖
+<br><br>
+
+Answer History
+
+</h3>
+
+<p>
+
+Review your previously saved astrology
+questions and answers whenever needed.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="how-it-works">
+
+<h2>
+
+How It Works
+
+</h2>
+
+<div class="steps">
+
+<div class="step">
+
+<h3>
+
+1️⃣ Create Your Profile
+
+</h3>
+
+<p>
+
+Enter your birth details once and securely save
+your profile.
+
+</p>
+
+</div>
+
+<div class="step">
+
+<h3>
+
+2️⃣ Ask Your Question
+
+</h3>
+
+<p>
+
+Type your astrology question or use voice
+assistance to ask it.
+
+</p>
+
+</div>
+
+<div class="step">
+
+<h3>
+
+3️⃣ Receive Your Answer
+
+</h3>
+
+<p>
+
+Your astrology answer is displayed inside
+the application.
+
+</p>
+
+</div>
+
+<div class="step">
+
+<h3>
+
+4️⃣ View Past Answers
+
+</h3>
+
+<p>
+
+Access your previous questions and answers
+from the history section.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<section id="business">
+
+<h2>
+
+Business Information
+
+</h2>
+
+<div class="business-grid">
+
+<div class="business-item">
+
+<h3>
+
+🏢 Product
+
+</h3>
+
+<p>
+
+AstroAskAQuestion
+
+</p>
+
+</div>
+
+<div class="business-item">
+
+<h3>
+
+📱 Platform
+
+</h3>
+
+<p>
+
+Android Application
+
+</p>
+
+</div>
+
+<div class="business-item">
+
+<h3>
+
+💼 Business Activity
+
+</h3>
+
+<p>
+
+Software and Mobile Application Development
+
+</p>
+
+</div>
+
+<div class="business-item">
+
+<h3>
+
+📍 Location
+
+</h3>
+
+<p>
+
+Bengaluru, Karnataka, India
+
+</p>
+
+</div>
+
+<div class="business-item">
+
+<h3>
+
+🌐 Official Website
+
+</h3>
+
+<p>
+
+<a href="https://astroaskaquestion.com">
+
+https://astroaskaquestion.com
+
+</a>
+
+</p>
+
+</div>
+
+<div class="business-item">
+
+<h3>
+
+📥 Download
+
+</h3>
+
+<p>
+
+Available on Google Play Store
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="contact">
+
+<h2>
+
+Contact
+
+</h2>
+
+<div class="contact-box">
+
+<p>
+
+For technical support, privacy questions,
+business enquiries or account-related assistance,
+please contact us.
+
+</p>
+
+<p>
+
+<strong>Email</strong>
+
+<br>
+
+<a href="mailto:astroaskaquestion.support@gmail.com">
+
+astroaskaquestion.support@gmail.com
+
+</a>
+
+</p>
+
+<p>
+
+<strong>Official Website</strong>
+
+<br>
+
+<a href="https://astroaskaquestion.com">
+
+https://astroaskaquestion.com
+
+</a>
+
+</p>
+
+<p>
+
+<strong>Google Play</strong>
+
+<br>
+
+<a
+href="https://play.google.com/store/apps/details?id=com.astrosaathi.app"
+target="_blank"
+rel="noopener noreferrer">
+
+AstroAskAQuestion on Google Play
+
+</a>
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="important">
+
+<h2>
+
+Important Information
+
+</h2>
+
+<div class="card">
+
+<p>
+
+AstroAskAQuestion provides astrology guidance for
+informational and personal guidance purposes.
+
+</p>
+
+<p>
+
+Astrology is interpretive in nature and should not
+be considered medical, legal, financial, mental-health,
+safety or emergency advice.
+
+</p>
+
+<p>
+
+Always use your own judgement and consult an
+appropriately qualified professional where necessary.
+
+</p>
+
+</div>
+
+</section>
+
+  <footer>
+
+<p>
+
+<a href="index.html">
+
+Home
+
+</a>
+
+|
+
+<a href="#about">
+
+About
+
+</a>
+
+|
+
+<a href="#features">
+
+Features
+
+</a>
+
+|
+
+<a href="#business">
+
+Business
+
+</a>
+
+|
+
+<a href="#contact">
+
+Contact
+
+</a>
+
+|
+
+<a href="privacy-policy.html">
+
+Privacy Policy
+
+</a>
+
+|
+
+<a href="account-deletion.html">
+
+Account Deletion
+
+</a>
+
+|
+
+<a
+href="https://play.google.com/store/apps/details?id=com.astrosaathi.app"
+target="_blank"
+rel="noopener noreferrer">
+
+Google Play
+
+</a>
+
+</p>
+
+<p style="margin-top:18px;">
+
+© 2026 AstroAskAQuestion. All rights reserved.
+
+</p>
+
+<p>
+
+Developed by AstroAskAQuestion
+
+</p>
+
+<p style="font-size:14px;opacity:.85;">
+
+Official Website:
+<a
+href="https://astroaskaquestion.com"
+style="color:white;">
+
+https://astroaskaquestion.com
+
+</a>
+
+</p>
 
 </footer>
+
+</main>
 
 </body>
 
 </html>
+  
