@@ -1,327 +1,731 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description"
-        content="Instructions for deleting an AstroAskAQuestion account and associated data.">
+<meta charset="UTF-8">
 
-  <title>Account Deletion | AstroAskAQuestion</title>
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<meta name="description"
+content="Delete your AstroAskAQuestion account">
 
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #202124;
-      background: #ffffff;
-      line-height: 1.7;
-    }
+<title>
 
-    header {
-      background: #351c75;
-      color: white;
-      text-align: center;
-      padding: 45px 20px;
-    }
+Account Deletion |
+AstroAskAQuestion
 
-    header h1 {
-      margin: 0 0 8px;
-    }
+</title>
 
-    header p {
-      margin: 0;
-      font-size: 18px;
-    }
+<link rel="icon"
+href="logo.png"
+type="image/png">
 
-    nav {
-      background: #24124f;
-      text-align: center;
-      padding: 13px;
-    }
+<style>
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 0 10px;
-    }
+*{
+box-sizing:border-box;
+}
 
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 35px 22px;
-    }
+body{
 
-    h1,
-    h2 {
-      line-height: 1.3;
-    }
+margin:0;
 
-    h2 {
-      color: #351c75;
-      margin-top: 35px;
-    }
+font-family:Arial,Helvetica,sans-serif;
 
-    a {
-      color: #351c75;
-    }
+background:#ffffff;
 
-    .box {
-      background: #f5f1ff;
-      padding: 18px 22px;
-      border-radius: 10px;
-    }
+color:#222;
 
-    .warning {
-      background: #fff8e1;
-      border-left: 5px solid #e0a800;
-      padding: 16px 18px;
-      border-radius: 8px;
-    }
+line-height:1.7;
 
-    .play-button {
-      display: inline-block;
-      background: #351c75;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 12px 22px;
-      border-radius: 8px;
-    }
+}
 
-    footer {
-      background: #24124f;
-      color: white;
-      text-align: center;
-      padding: 25px 15px;
-      margin-top: 40px;
-    }
+header{
 
-    footer a {
-      color: white;
-      text-decoration: none;
-      margin: 0 6px;
-    }
-  </style>
+background:#351c75;
+
+color:white;
+
+padding:30px 20px;
+
+}
+
+.header-container{
+
+max-width:1100px;
+
+margin:auto;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:20px;
+
+}
+
+.brand{
+
+display:flex;
+
+align-items:center;
+
+gap:18px;
+
+}
+
+.logo{
+
+width:75px;
+
+height:75px;
+
+border-radius:15px;
+
+background:white;
+
+padding:5px;
+
+object-fit:contain;
+
+}
+
+.brand-text h1{
+
+margin:0;
+
+font-size:30px;
+
+}
+
+.brand-text p{
+
+margin:6px 0 0;
+
+font-size:17px;
+
+opacity:.95;
+
+}
+
+nav{
+
+background:#24124f;
+
+text-align:center;
+
+padding:14px;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+margin:0 14px;
+
+font-weight:bold;
+
+}
+
+nav a:hover{
+
+text-decoration:underline;
+
+}
+
+main{
+
+max-width:950px;
+
+margin:auto;
+
+padding:40px 22px;
+
+}
+
+h2{
+
+color:#351c75;
+
+margin-top:40px;
+
+}
+
+.card{
+
+background:#f8f6fc;
+
+padding:25px;
+
+border-radius:12px;
+
+margin-top:18px;
+
+}
+
+.notice{
+
+background:#efe8ff;
+
+padding:18px;
+
+border-left:6px solid #351c75;
+
+border-radius:8px;
+
+margin-top:20px;
+
+}
+
+ol{
+
+padding-left:24px;
+
+}
+
+li{
+
+margin-bottom:14px;
+
+}
+
+a{
+
+color:#351c75;
+
+}
+
+footer{
+
+background:#24124f;
+
+color:white;
+
+text-align:center;
+
+padding:28px 18px;
+
+margin-top:50px;
+
+}
+
+footer a{
+
+color:white;
+
+text-decoration:none;
+
+margin:0 6px;
+
+}
+
+footer a:hover{
+
+text-decoration:underline;
+
+}
+
+@media(max-width:700px){
+
+.brand{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.logo{
+
+width:65px;
+
+height:65px;
+
+}
+
+.brand-text h1{
+
+font-size:26px;
+
+}
+
+.brand-text p{
+
+font-size:15px;
+
+}
+
+nav a{
+
+display:block;
+
+margin:8px 0;
+
+}
+
+main{
+
+padding:28px 18px;
+
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
 <header>
-  <h1>AstroAskAQuestion</h1>
-  <p>Account Deletion</p>
+
+<div class="header-container">
+
+<div class="brand">
+
+<img
+src="logo.png"
+class="logo"
+alt="AstroAskAQuestion Logo">
+
+<div class="brand-text">
+
+<h1>
+
+AstroAskAQuestion
+
+</h1>
+
+<p>
+
+Account Deletion
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
 </header>
 
 <nav>
-  <a href="index.html">Home</a>
-  <a href="privacy-policy.html">Privacy Policy</a>
-  <a href="account-deletion.html">Account Deletion</a>
-  <a href="index.html#contact">Contact</a>
-  <a href="https://play.google.com/store/apps/details?id=com.astrosaathi.app"
-     target="_blank"
-     rel="noopener noreferrer">Google Play</a>
+
+<a href="index.html">
+
+Home
+
+</a>
+
+<a href="privacy-policy.html">
+
+Privacy Policy
+
+</a>
+
+<a href="account-deletion.html">
+
+Account Deletion
+
+</a>
+
+<a href="index.html#contact">
+
+Contact
+
+</a>
+
+<a
+href="https://play.google.com/store/apps/details?id=com.astrosaathi.app"
+target="_blank">
+
+Google Play
+
+</a>
+
 </nav>
 
 <main>
 
-  <h1>Delete Your AstroAskAQuestion Account and Data</h1>
+<h1>
 
-  <p>
-    AstroAskAQuestion allows you to delete individual profile information
-    without deleting your complete account, or permanently delete your
-    AstroAskAQuestion cloud account and associated application data.
-  </p>
+Delete Your AstroAskAQuestion Account
 
-  <h2>Delete a Profile Without Deleting Your Account</h2>
+</h1>
 
-  <ol class="box">
-    <li>
-      Open <strong>AstroAskAQuestion</strong> and sign in.
-    </li>
+<p>
 
-    <li>
-      Open the <strong>Profile</strong> screen.
-    </li>
+This page explains how you can remove individual data,
+delete your account permanently and understand what
+information may be retained after deletion.
 
-    <li>
-      Select the birth profile you want to remove.
-    </li>
+</p>
 
-    <li>
-      Choose the profile deletion option.
-    </li>
+<div class="notice">
 
-    <li>
-      Review the confirmation message and confirm the deletion.
-    </li>
-  </ol>
+Deleting your account permanently removes your cloud
+account and associated application data. This action
+cannot be undone.
 
-  <p>
-    Deleting an individual profile does not automatically delete
-    your entire AstroAskAQuestion account.
-  </p>
+</div>
 
-  <h2>Manage Saved Answer History</h2>
+<h2>
 
-  <p>
-    Where the App provides an option to clear eligible saved answer history,
-    you may use that option to remove the selected question-and-answer history
-    without deleting your complete account.
-  </p>
+Delete Individual Data
 
-  <h2>Permanently Delete Your Account Through the App</h2>
+</h2>
 
-  <ol class="box">
-    <li>
-      Open <strong>AstroAskAQuestion</strong>.
-    </li>
+<div class="card">
 
-    <li>
-      Sign in using the Google account associated with your
-      AstroAskAQuestion account.
-    </li>
+<ol>
 
-    <li>
-      Open the <strong>Ask Your Question</strong> screen.
-    </li>
+<li>
 
-    <li>
-      Select
-      <strong>DELETE MY ACCOUNT FROM CLOUD PERMANENTLY</strong>.
-    </li>
+Open <strong>AstroAskAQuestion</strong> and sign in.
 
-    <li>
-      Carefully review the warning displayed by the App.
-    </li>
+</li>
 
-    <li>
-      Confirm the permanent account deletion.
-    </li>
-  </ol>
+<li>
 
-  <div class="warning">
-    <strong>Important:</strong>
-    Permanent account deletion may remove cloud information that cannot
-    subsequently be restored through AstroAskAQuestion.
-  </div>
+Open the Profile Management screen.
 
-  <h2>If You Cannot Access the App</h2>
+</li>
 
-  <p>
-    If you cannot access AstroAskAQuestion but need assistance with
-    an account deletion request, contact:
-  </p>
+<li>
 
-  <p>
-    <a href="mailto:astroaskaquestion.support@gmail.com?subject=AstroAskAQuestion%20Account%20Deletion%20Request">
-      astroaskaquestion.support@gmail.com
-    </a>
-  </p>
+Select the birth profile you wish to remove.
 
-  <p>
-    Use the subject:
-    <strong>AstroAskAQuestion Account Deletion Request</strong>.
-  </p>
+</li>
 
-  <p>
-    Do not send passwords, OTPs, complete payment-card information,
-    UPI credentials, Google Play purchase tokens, government identification
-    documents or other highly sensitive credentials by email.
-  </p>
+<li>
 
-  <p>
-    We may require an appropriate secure method to verify that the
-    deletion request relates to the account concerned.
-  </p>
+Delete the selected profile.
 
-  <h2>Data Deleted</h2>
+</li>
 
-  <p>
-    Subject to successful processing of the deletion request,
-    AstroAskAQuestion may delete active account-associated records such as:
-  </p>
+<li>
 
-  <ul>
-    <li>Cloud account-related application records</li>
-    <li>Cloud-synchronized birth profiles</li>
-    <li>Cloud-synchronized answer history</li>
-    <li>Wallet balance associated with the AstroAskAQuestion account</li>
-    <li>Pending answer or recovery records linked to the account</li>
-    <li>Other active account-linked application records</li>
-  </ul>
+Open <strong>Past Answers</strong> if you want to
+remove stored answer history.
 
-  <p>
-    Information stored locally on your Android device may separately
-    be removed by clearing the App's local storage or uninstalling the App.
-  </p>
+</li>
 
-  <h2>Data That May Be Retained</h2>
+<li>
 
-  <p>
-    Certain records may be retained where reasonably necessary
-    for fraud prevention, transaction integrity, security,
-    accounting, tax, dispute resolution or legal requirements.
-  </p>
+Confirm the deletion.
 
-  <p>
-    Completed Google Play purchase records may also remain within
-    Google Play according to Google's own policies and applicable
-    retention requirements.
-  </p>
+</li>
 
-  <p>
-    Firebase, Google and other service providers may independently retain
-    information according to their own applicable terms, policies
-    and legal obligations.
-  </p>
+</ol>
 
-  <h2>Privacy Policy</h2>
+<p>
 
-  <p>
-    For more information about how AstroAskAQuestion handles information,
-    read our
-    <a href="privacy-policy.html">Privacy Policy</a>.
-  </p>
+Deleting an individual profile removes only that
+profile and its associated history. Your account
+remains active.
 
-  <h2>Android Application</h2>
+</p>
 
-  <p>
-    AstroAskAQuestion is available through Google Play.
-  </p>
+</div>
 
-  <p>
-    <a class="play-button"
-       href="https://play.google.com/store/apps/details?id=com.astrosaathi.app"
-       target="_blank"
-       rel="noopener noreferrer">
-      Download AstroAskAQuestion on Google Play
-    </a>
-  </p>
+<h2>
+
+Delete Your Entire Account
+
+</h2>
+
+<div class="card">
+
+<ol>
+
+<li>
+
+Open AstroAskAQuestion.
+
+</li>
+
+<li>
+
+Sign in using your Google account.
+
+</li>
+
+<li>
+
+Open the Account section.
+
+</li>
+
+<li>
+
+Select
+
+<strong>
+
+Delete Account Permanently
+
+</strong>
+
+</li>
+
+<li>
+
+Review the warning message.
+
+</li>
+
+<li>
+
+Confirm permanent deletion.
+
+</li>
+
+</ol>
+
+</div>
+
+  <h2>
+
+If You Cannot Access the App
+
+</h2>
+
+<div class="card">
+
+<p>
+
+If you are unable to sign in to the application,
+you may request permanent account deletion by
+contacting our support team.
+
+</p>
+
+<p>
+
+<strong>Email</strong><br>
+
+<a href="mailto:astroaskaquestion.support@gmail.com?subject=AstroAskAQuestion%20Account%20Deletion%20Request">
+
+astroaskaquestion.support@gmail.com
+
+</a>
+
+</p>
+
+<p>
+
+Please include:
+
+</p>
+
+<ul>
+
+<li>Your Google account email used to sign in.</li>
+
+<li>A request stating that you want your account permanently deleted.</li>
+
+</ul>
+
+<p>
+
+For your security, we may request additional
+verification before processing the deletion.
+
+</p>
+
+</div>
+
+<h2>
+
+Data That Will Be Deleted
+
+</h2>
+
+<div class="card">
+
+<ul>
+
+<li>Your AstroAskAQuestion account.</li>
+
+<li>Cloud synchronized birth profiles.</li>
+
+<li>Saved astrology questions.</li>
+
+<li>Saved astrology answers.</li>
+
+<li>Wallet information associated with your account.</li>
+
+<li>Application settings linked to your account.</li>
+
+</ul>
+
+</div>
+
+<h2>
+
+Data That May Be Retained
+
+</h2>
+
+<div class="card">
+
+<p>
+
+Certain information may be retained where required
+for legal, tax, accounting, fraud prevention,
+security or dispute resolution purposes.
+
+</p>
+
+<p>
+
+Google Play and Google Authentication services
+may retain information according to their own
+privacy policies.
+
+</p>
+
+</div>
+
+<h2>
+
+Privacy Policy
+
+</h2>
+
+<div class="card">
+
+<p>
+
+Please read our
+
+<a href="privacy-policy.html">
+
+Privacy Policy
+
+</a>
+
+to understand how information is collected,
+used and protected.
+
+</p>
+
+</div>
+
+<h2>
+
+Contact
+
+</h2>
+
+<div class="card">
+
+<p>
+
+If you have any questions regarding account
+deletion, please contact:
+
+</p>
+
+<p>
+
+<strong>Email</strong><br>
+
+<a href="mailto:astroaskaquestion.support@gmail.com">
+
+astroaskaquestion.support@gmail.com
+
+</a>
+
+</p>
+
+<p>
+
+<strong>Website</strong><br>
+
+<a href="https://astroaskaquestion.com">
+
+https://astroaskaquestion.com
+
+</a>
+
+</p>
+
+</div>
 
 </main>
 
 <footer>
 
-  <p>
-    <a href="index.html">Home</a> |
-    <a href="privacy-policy.html">Privacy Policy</a> |
-    <a href="account-deletion.html">Account Deletion</a> |
-    <a href="index.html#contact">Contact</a> |
-    <a href="https://play.google.com/store/apps/details?id=com.astrosaathi.app"
-       target="_blank"
-       rel="noopener noreferrer">Google Play</a>
-  </p>
+<p>
 
-  <p>© 2026 AstroAskAQuestion. All rights reserved.</p>
+<a href="index.html">
 
-  <p>Developed by Pranjal Misra · Bengaluru, Karnataka, India</p>
+Home
+
+</a>
+
+|
+
+<a href="privacy-policy.html">
+
+Privacy Policy
+
+</a>
+
+|
+
+<a href="account-deletion.html">
+
+Account Deletion
+
+</a>
+
+|
+
+<a href="index.html#contact">
+
+Contact
+
+</a>
+
+|
+
+<a
+href="https://play.google.com/store/apps/details?id=com.astrosaathi.app"
+target="_blank"
+rel="noopener noreferrer">
+
+Google Play
+
+</a>
+
+</p>
+
+<p>
+
+© 2026 AstroAskAQuestion. All rights reserved.
+
+</p>
+
+<p>
+
+Developed by AstroAskAQuestion
+
+</p>
 
 </footer>
 
 </body>
+
 </html>
