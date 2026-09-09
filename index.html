@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Official website of AstroAskAQuestion, an Android application providing Vedic astrology question and answer services.">
-  <title>AstroAskAQuestion | Official Website</title>
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Official website of AstroAskAQuestion, an Android application for Vedic astrology questions, private birth profiles, voice assistance and multiple Indian languages.">
+
+  <meta name="robots"
+        content="index, follow">
+
+  <link rel="canonical"
+        href="https://astroaskaquestion.com/">
+
+  <title>AstroAskAQuestion | Vedic Astrology Android App</title>
 
   <style>
+
     * {
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -22,45 +40,117 @@
     header {
       background: #351c75;
       color: white;
-      padding: 55px 20px;
       text-align: center;
+      padding: 55px 20px 50px;
+    }
+
+    .logo {
+      width: 90px;
+      height: 90px;
+      border-radius: 18px;
+      object-fit: contain;
+      margin-bottom: 14px;
+      background: white;
     }
 
     header h1 {
-      margin: 0 0 10px;
-      font-size: 38px;
+      margin: 0 0 8px;
+      font-size: 40px;
     }
 
-    header p {
+    .tagline {
       margin: 0;
-      font-size: 18px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .subtagline {
+      margin: 8px 0 0;
+      font-size: 16px;
+    }
+
+    .play-button {
+      display: inline-block;
+      margin-top: 20px;
+      background: #ffffff;
+      color: #351c75;
+      padding: 13px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .play-button:hover {
+      background: #f5f1ff;
     }
 
     nav {
       background: #24124f;
       text-align: center;
-      padding: 13px;
+      padding: 14px 10px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 14px;
+      margin: 0 10px;
       font-weight: bold;
+      display: inline-block;
+      padding: 4px 0;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     main {
-      max-width: 950px;
+      max-width: 1050px;
       margin: auto;
-      padding: 35px 22px;
+      padding: 40px 22px;
     }
 
     section {
-      margin-bottom: 45px;
+      margin-bottom: 55px;
     }
 
     h2 {
       color: #351c75;
+      margin-top: 0;
+      font-size: 30px;
+    }
+
+    h3 {
+      color: #351c75;
+    }
+
+    a {
+      color: #351c75;
+    }
+
+    .intro {
+      font-size: 18px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .feature {
+      border: 1px solid #dddddd;
+      border-radius: 10px;
+      padding: 20px;
+      background: #ffffff;
+    }
+
+    .feature strong {
+      color: #351c75;
+      font-size: 18px;
     }
 
     .card {
@@ -70,135 +160,530 @@
       margin-top: 18px;
     }
 
-    .features {
+    .steps {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      grid-template-columns:
+        repeat(auto-fit, minmax(190px, 1fr));
+      gap: 16px;
+    }
+
+    .step {
+      background: #f7f5fb;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+
+        .download-section {
+      background: #351c75;
+      color: white;
+      border-radius: 14px;
+      padding: 35px 25px;
+      text-align: center;
+    }
+
+    .download-section h2 {
+      color: white;
+    }
+
+    .download-section p {
+      font-size: 18px;
+    }
+
+    .download-button {
+      display: inline-block;
+      background: white;
+      color: #351c75;
+      padding: 14px 26px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .download-button:hover {
+      background: #f5f1ff;
+    }
+
+    .qr-placeholder {
+      width: 150px;
+      height: 150px;
+      margin: 24px auto 0;
+      border: 2px dashed #ffffff;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      padding: 10px;
+    }
+
+    .business-grid {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .business-item {
+      background: #f7f5fb;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .contact-box {
+      background: #f7f5fb;
+      border-radius: 10px;
+      padding: 25px;
+    }
+
+    .important-links {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(210px, 1fr));
       gap: 15px;
     }
 
-    .feature {
-      border: 1px solid #ddd;
-      border-radius: 8px;
+    .important-link {
+      border: 1px solid #dddddd;
+      border-radius: 10px;
       padding: 18px;
+      text-align: center;
+      background: white;
+    }
+
+    .important-link a {
+      font-weight: bold;
+      text-decoration: none;
     }
 
     footer {
       background: #24124f;
       color: white;
       text-align: center;
-      padding: 25px 15px;
+      padding: 28px 16px;
     }
 
     footer a {
       color: white;
+      text-decoration: none;
+      margin: 0 6px;
     }
 
-    a {
-      color: #351c75;
+    footer a:hover {
+      text-decoration: underline;
     }
+
+    @media (max-width: 700px) {
+
+      header h1 {
+        font-size: 32px;
+      }
+
+      .tagline {
+        font-size: 18px;
+      }
+
+      nav {
+        position: static;
+      }
+
+      nav a {
+        display: block;
+        margin: 6px 0;
+      }
+
+      main {
+        padding: 30px 18px;
+      }
+
+      h2 {
+        font-size: 26px;
+      }
+    }
+
   </style>
+
 </head>
 
 <body>
 
 <header>
+
+  <img
+    src="logo.png"
+    alt="AstroAskAQuestion Logo"
+    class="logo">
+
   <h1>AstroAskAQuestion</h1>
-  <p>Ask your Vedic astrology question through our Android application</p>
-  <p><a href="https://play.google.com/store/apps/details?id=com.astrosaathi.app" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:#ffffff;color:#351c75;padding:12px 22px;border-radius:8px;font-weight:bold;text-decoration:none;margin-top:8px;">Get AstroAskAQuestion on Google Play</a></p>
+
+  <p class="tagline">
+    Your Personal Vedic Astrology Assistant
+  </p>
+
+  <p class="subtagline">
+    Private • Secure • Multiple Profiles • Voice Assistance • Indian Languages
+  </p>
+
+  <a
+    class="play-button"
+    href="https://play.google.com/store/apps/details?id=com.astrosaathi.app"
+    target="_blank"
+    rel="noopener noreferrer">
+    Download on Google Play
+  </a>
+
 </header>
 
 <nav>
+
   <a href="#about">About</a>
-  <a href="#app">Our App</a>
+
+  <a href="#features">Features</a>
+
+  <a href="#how-it-works">How It Works</a>
+
+  <a href="#download">Download</a>
+
   <a href="#business">Business</a>
+
   <a href="#contact">Contact</a>
+
+  <a href="privacy-policy.html">Privacy Policy</a>
+
+  <a href="account-deletion.html">Account Deletion</a>
+
 </nav>
 
 <main>
 
   <section id="about">
+
     <h2>About AstroAskAQuestion</h2>
 
-    <p>
+    <p class="intro">
       AstroAskAQuestion is an Android application designed to make
-      Vedic astrology guidance simple and accessible.
+      Vedic astrology guidance simple, accessible and easy to use.
     </p>
 
     <p>
-      Users can create private birth profiles, enter their birth details
-      and ask astrology questions through the application.
+      Users can create private birth profiles, enter their birth details,
+      ask astrology questions and maintain separate answer histories
+      for different profiles.
     </p>
+
+    <p>
+      The App includes Google Sign-In, cloud synchronization,
+      voice assistance and support for multiple Indian languages.
+    </p>
+
   </section>
 
-  <section id="app">
-    <h2>AstroAskAQuestion Android App</h2>
+  <section id="features">
+
+    <h2>App Features</h2>
 
     <div class="features">
 
       <div class="feature">
         <strong>Vedic Astrology Questions</strong>
-        <p>Ask questions using your saved birth profile.</p>
+        <p>
+          Ask astrology questions using your saved birth details.
+        </p>
+      </div>
+
+      <div class="feature">
+        <strong>Multiple Profiles</strong>
+        <p>
+          Create and maintain separate private birth profiles.
+        </p>
+      </div>
+
+      <div class="feature">
+        <strong>Google Sign-In</strong>
+        <p>
+          Secure authentication and account synchronization.
+        </p>
+      </div>
+
+      <div class="feature">
+        <strong>Google Play Billing</strong>
+        <p>
+          Purchase wallet points securely through Google Play.
+        </p>
+      </div>
+
+            <div class="feature">
+        <strong>Voice Assistance</strong>
+        <p>
+          Use voice input to make data entry and question submission easier.
+        </p>
       </div>
 
       <div class="feature">
         <strong>Indian Languages</strong>
-        <p>The application is designed to support users in multiple Indian languages.</p>
+        <p>
+          Designed to support users in multiple Indian languages.
+        </p>
       </div>
 
       <div class="feature">
-        <strong>Voice Assistance</strong>
-        <p>Voice assistance helps make the application easier to use.</p>
+        <strong>Private Answer History</strong>
+        <p>
+          Keep astrology questions and answers associated with the correct profile.
+        </p>
       </div>
 
       <div class="feature">
-        <strong>Private Profiles</strong>
-        <p>Maintain separate birth profiles and astrology question history.</p>
+        <strong>Cloud Restore</strong>
+        <p>
+          Restore eligible profiles and answer history after signing in.
+        </p>
       </div>
 
     </div>
+
+  </section>
+
+  <section id="how-it-works">
+
+    <h2>How It Works</h2>
+
+    <div class="steps">
+
+      <div class="step">
+        <h3>1. Create a Profile</h3>
+        <p>
+          Enter the birth details required for the astrology profile.
+        </p>
+      </div>
+
+      <div class="step">
+        <h3>2. Ask a Question</h3>
+        <p>
+          Type or speak your astrology question.
+        </p>
+      </div>
+
+      <div class="step">
+        <h3>3. Receive Your Answer</h3>
+        <p>
+          Your astrology answer is displayed in the App.
+        </p>
+      </div>
+
+      <div class="step">
+        <h3>4. Save Your History</h3>
+        <p>
+          Review previous questions and answers from your saved history.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="download" class="download-section">
+
+    <h2>Download AstroAskAQuestion</h2>
+
+    <p>
+      AstroAskAQuestion is available for Android through Google Play.
+    </p>
+
+    <a
+      class="download-button"
+      href="https://play.google.com/store/apps/details?id=com.astrosaathi.app"
+      target="_blank"
+      rel="noopener noreferrer">
+      Download on Google Play
+    </a>
+
+    <div class="qr-placeholder">
+      QR Code<br>
+      Coming Soon
+    </div>
+
   </section>
 
   <section id="business">
-    <h2>Business Information</h2>
 
-    <div class="card">
-      <p><strong>Enterprise:</strong> Pranjal Misra</p>
-      <p><strong>Product:</strong> AstroAskAQuestion</p>
-      <p><strong>Business Activity:</strong> Software and mobile application development</p>
-      <p><strong>Location:</strong> Bengaluru, Karnataka, India</p>
+    <h2>Business</h2>
+
+    <div class="business-grid">
+
+      <div class="business-item">
+        <strong>Developer</strong>
+        <p>Pranjal Misra</p>
+      </div>
+
+      <div class="business-item">
+        <strong>Product</strong>
+        <p>AstroAskAQuestion</p>
+      </div>
+
+      <div class="business-item">
+        <strong>Business Activity</strong>
+        <p>
+          Software and mobile application development
+        </p>
+      </div>
+
+      <div class="business-item">
+        <strong>Location</strong>
+        <p>
+          Bengaluru, Karnataka, India
+        </p>
+      </div>
+
+      <div class="business-item">
+        <strong>Platform</strong>
+        <p>
+          Android
+        </p>
+      </div>
+
+      <div class="business-item">
+        <strong>Official Website</strong>
+        <p>
+          <a href="https://astroaskaquestion.com">
+            astroaskaquestion.com
+          </a>
+        </p>
+      </div>
+
     </div>
+
   </section>
 
   <section id="contact">
+
     <h2>Contact</h2>
 
-    <p>
-      For questions regarding AstroAskAQuestion, technical support,
-      privacy or account-related matters, contact:
-    </p>
+    <div class="contact-box">
 
-    <p>
-      <strong>Email:</strong>
-      astroaskaquestion.support@gmail.com
-    </p>
+      <p>
+        For technical support, privacy questions,
+        account-related assistance or business enquiries,
+        contact:
+      </p>
+
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:astroaskaquestion.support@gmail.com">
+          astroaskaquestion.support@gmail.com
+        </a>
+      </p>
+
+      <p>
+        <strong>Website:</strong>
+        <a href="https://astroaskaquestion.com">
+          https://astroaskaquestion.com
+        </a>
+      </p>
+
+      <p>
+        <strong>Google Play:</strong>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.astrosaathi.app"
+          target="_blank"
+          rel="noopener noreferrer">
+          AstroAskAQuestion on Google Play
+        </a>
+      </p>
+
+    </div>
+
   </section>
 
-  <section>
+    <section id="important-links">
+
+    <h2>Important Links</h2>
+
+    <div class="important-links">
+
+      <div class="important-link">
+        <a href="privacy-policy.html">
+          Privacy Policy
+        </a>
+      </div>
+
+      <div class="important-link">
+        <a href="account-deletion.html">
+          Account Deletion
+        </a>
+      </div>
+
+      <div class="important-link">
+        <a href="#contact">
+          Contact & Support
+        </a>
+      </div>
+
+      <div class="important-link">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.astrosaathi.app"
+          target="_blank"
+          rel="noopener noreferrer">
+          Google Play
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="important-information">
+
     <h2>Important Information</h2>
 
-    <p>
-      Astrology guidance provided through AstroAskAQuestion is intended
-      for informational and personal guidance purposes. It should not
-      replace professional medical, legal, financial or emergency advice.
-    </p>
+    <div class="card">
+
+      <p>
+        Astrology guidance provided through AstroAskAQuestion is intended
+        for informational and personal guidance purposes.
+      </p>
+
+      <p>
+        Astrology is interpretive and should not be treated as certainty.
+        Information provided through the App should not replace professional
+        medical, legal, financial, mental-health, safety or emergency advice.
+      </p>
+
+    </div>
+
   </section>
 
 </main>
 
 <footer>
-  <p>© 2026 AstroAskAQuestion. All rights reserved.</p>
-  <p>Developed by Pranjal Misra · Bengaluru, India</p>
+
+  <p>
+    <a href="index.html">Home</a> |
+    <a href="#about">About</a> |
+    <a href="#features">Features</a> |
+    <a href="#download">Download</a> |
+    <a href="#contact">Contact</a> |
+    <a href="privacy-policy.html">Privacy Policy</a> |
+    <a href="account-deletion.html">Account Deletion</a> |
+    <a
+      href="https://play.google.com/store/apps/details?id=com.astrosaathi.app"
+      target="_blank"
+      rel="noopener noreferrer">
+      Google Play
+    </a>
+  </p>
+
+  <p>
+    © 2026 AstroAskAQuestion. All rights reserved.
+  </p>
+
+  <p>
+    Developed by Pranjal Misra · Bengaluru, Karnataka, India
+  </p>
+
 </footer>
 
 </body>
+
 </html>
